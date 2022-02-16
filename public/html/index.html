@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script type="text/javascript" src="../js/index.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+	<div id="dimScreen" ondblclick="alert(`hey`)"></div>
+	<div class="row">
+		<div class="col-1">
+			<h1 id="title">Modules</h1>
+		</div>
+		<div class="col-2 align-self-center">
+			<button id="createBtn" onclick="addModule()"><img id="createBtnImg" src="../images/plus.svg"></button>
+		</div>
+	</div>
+
+	<div class="card" style="width: 18rem;">
+		<div class="card-body">
+			<h5 class="card-title" id="card-title">Programming</h5>
+			<button id="activate-timer" onclick="activateTimer()"><img id="timerPict" src="../images/play.svg"></button>
+			<button id="reset-timer" onclick="resetTimer()"><img id="resetPict" src="../images/arrow-clockwise.svg"></button>
+			<h6 class="card-subtitle mb-2 text-muted" id="timer">2h</h6>
+			
+			<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			<a href="#" class="card-link">Card link</a>
+			<a href="#" class="card-link">Another link</a>
+		</div>
+	</div>
+	
+</body>
+</html>

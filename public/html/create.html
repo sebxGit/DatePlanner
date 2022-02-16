@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Date Poll</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script type="text/javascript" src="../js/create.js"></script>
+</head>
+<body>
+	<div class="container" id="page">
+		<div class="row justify-content-center">
+			<h1>Create Poll Dates</h1>
+		</div>
+		<div class="row">
+			<div class="col-10">
+				<label>From: </label>
+				<input type="date" id="first" min=""onchange="SelectStartDate(event)">
+				<label>To: </label>
+				<input type="date" id="last" onchange="SelectEndDate(event)">
+			</div>
+		</div>
+		<div class="row">
+			<br>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<label>Exclude date: </label>
+				<input type="date" id="exclude" onchange="SelectExcludeDate(event)">
+			</div>
+			<div class="col-6" id="excludedDates">
+				<label>Ex dates:</label>
+			</div>
+		</div>
+		<div class="row">
+			<button class="btn btn-success" onclick="SubmitPoll()">Create Poll</button>
+		</div>
+	</div>
+
+</body>
+</html>

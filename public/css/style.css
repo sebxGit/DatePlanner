@@ -1,0 +1,32 @@
+button,#activate-timer{
+	border:none;
+	background:none;
+	cursor:pointer;
+}
+
+#title, #createBtn{
+	display: inline-block;
+}
+
+#createBtnImg{
+	height:30px;width:30px;
+	display: inline-block;
+}
+
+#card-title, #activate-timer{
+	display: inline-block;
+}
+
+#dimScreen
+{
+    position:fixed;
+    padding:0;
+    margin:0;
+		z-index: -1;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+}
