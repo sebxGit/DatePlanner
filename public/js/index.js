@@ -52,6 +52,7 @@ function addModule(){
 	var input1 = document.createElement('input');
 	input1.type = "text";
 	input1.placeholder = "Title";
+	input1.style="width:200px;";
 	cardBody.appendChild(input1);
 
 	var input2 = document.createElement('input');
@@ -62,8 +63,35 @@ function addModule(){
 
 	var input3 = document.createElement('textarea');
 	input3.placeholder = "Description";
+	input3.style="width:200px;";
 	cardBody.appendChild(input3);
+
+	var btn = document.createElement('button');
+	btn.placeholder = "Test";
+	btn.type = "button";
+	btn.className = "btn btn-success";
+	btn.innerText = "Create";
+	btn.onclick = () => {createModule(input1.value,input2.value,input3.value)};
+	cardBody.appendChild(btn);
 
 	card.appendChild(cardBody);
 	document.body.appendChild(card);
+}
+
+function createModule(Title, Time, Description){
+	inputValidate([Title, Time, Description]);
+	var card = document.createElement('div');
+	card.className = "card";
+	card.style = "width: 18rem;";
+	
+	var cardBody = document.createElement('div');
+	cardBody.className = "card-body";
+}
+
+function inputValidate(arr){
+	for(let i = 0; i < 3; i++)
+		if(arr[i] === "") return;
+	
+	var time = arr[1];
+	console.log("Input is valid!");
 }
